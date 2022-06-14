@@ -1,0 +1,653 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Yekan';
+    src:url('fonts/BYekan.eot?#') format('eot'),    
+        url('fonts/BYekan.woff') format('woff'),
+        url('fonts/BYekan.ttf') format('truetype'); 
+}
+
+* {
+	margin:0;
+	padding:2;
+	border:0;
+	font-family:Yekan, tahoma;
+	font-size:13px;
+border-radius: 5px;
+}
+
+
+
+a {
+	text-decoration:none;
+	transition:0s;
+	cursor:pointer;
+	color:#000;
+}
+
+a:hover {
+	color:#000;
+
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: normal;
+    display: block;
+    color: #FFF;
+    cursor: pointer;
+    background: none repeat scroll 0% 0% #12CE66;
+    padding: 0px 10px;
+    margin: 0px;
+    border-bottom: 2px solid #0A2;
+font-family: tahoma;
+}
+
+h2 {
+	font-size:18px;
+	font-weight:normal;
+	display:block;
+}
+
+.clear {
+	clear:both;
+}
+
+.line {
+	clear:both;
+	background-image:url(images/cols-shadow.png); 
+	background-position:bottom center; 
+	height:22px;
+	display:block;
+}
+
+.limiter {
+	width:100%;
+	position:relative;
+	overflow:visible;
+	display:block;
+}
+
+
+
+
+.column-adv {
+	overflow:hidden;
+	width:120px;
+	height:240px;
+	float:right; 
+	margin:1px; 
+	border:1px solid #999;
+}
+
+.content {
+	width:95%;
+	border:0px solid #000000;
+	display:block;
+
+	padding:10px;
+	overflow:visible;
+	float:center;
+}
+
+.right {
+	display:block;
+	width:75%;
+	float:left;
+	overflow:visible;
+	position:relative;
+}
+
+.left {
+	display:block;
+	float:right;
+	width:25%;
+}
+
+.top-menu {
+	display:block;
+	overflow:auto;
+	margin-top:20px;
+direction:ltr;
+}
+
+.top-menu li {
+	float:left;
+	overflow:auto;
+}
+
+.top-menu li a {
+	display:block;
+	width:90px;
+	padding:10px;
+	margin:1px;
+	margin-left:40;
+//font-weight:bold;
+//background-image:url(images/top-menu-bg.png);
+	background-position:left;
+	background-repeat:no-repeat;
+	border-radius:5px;
+color:#FFF;
+	background-color:#3A454B;
+}
+
+.top-menu li a:hover {
+	background-color:#6DC437;
+
+}
+
+.notlogin {
+	position:absolute;
+	top:128px;
+	right:2px;
+	width:595px;
+	height:275px;
+	background-image:url(images/notlogin.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+.infobox {
+	display:block;
+	overflow:auto;
+	width:145px;
+	padding:10px;
+	padding-right:41px;
+	margin:3px;
+	margin-right:0;
+	border:1px solid #000;
+	float:right;
+	text-align:right;
+	background-image:url(images/infobox-blue.png);
+	background-position:right top;
+	background-repeat:no-repeat;
+	color:#D9E7F0;
+}
+
+.infobox a {
+	float:left;
+	color:#F2575B;
+}
+
+.countrylist {
+	text-align:left;
+	display:block;
+	float:right;
+	margin:2px;
+	width:94px;
+	padding:3px;
+	padding-left:45px;
+	direction:ltr;
+	color:#333;
+
+	background-position:left center;
+	background-repeat:no-repeat;
+	border:1px solid #000;
+}
+
+.box {
+
+	font-size:13px;
+	line-height:25px;
+	color:#000;
+	padding:7px;
+	border-radius: 5px;
+	margin:2px;
+	text-align:right;
+        background: url("images/transbg.png") repeat scroll 0% 0% transparent; margin-down: 20px;
+}
+
+.box2 {
+
+	font-size:13px;
+	line-height:25px;
+	color:#000;
+	padding:7px;
+	border-radius: 5px;
+	margin:2px;
+	text-align:right;
+        background: url("images/transbg.png") repeat scroll 0% 0% transparent; margin-down: 20px;
+}
+
+.loading {
+	position:absolute;
+	bottom:0;
+	left:0;
+
+	background-image:url(images/loading.gif);
+	background-position:center top;
+	background-repeat:no-repeat;
+	height:100%;
+	width:100%;
+	z-index:100000;
+	visibility:hidden;
+}
+
+.form {
+	overflow:auto;
+	position:relative;
+}
+
+.form ul {
+	list-style-type:none;
+	overflow:auto;
+	clear:both;
+}
+
+.form li {
+	line-height:40px;
+	float:right;
+	text-align:justify;
+	margin:2px;
+
+}
+
+.home {
+	overflow:auto;
+	position:relative;
+}
+
+.home ul {
+	list-style-type:none;
+	overflow:auto;
+	clear:both;
+}
+
+.home li {
+	list-style-type:none;
+	float:right;
+}
+
+.home li a {
+	display:block;
+	background-image:url(images/button2.png);
+	background-position:center bottom;
+	padding:5px;
+	margin:1px;
+}
+
+.home li a#move:hover {
+	background-position:center top;
+}
+
+
+
+
+.listtitle {
+	display:block;
+	overflow:auto;
+	background-image:url(images/button.jpg);
+	background-position:top;
+	text-align:right;
+	margin:1px;
+	font-size:17px;
+	line-height:30px;
+}
+
+
+.listtitle2 {
+	display:block;
+	overflow:auto;
+	background-position:top;
+	text-align:right;
+	margin:1px;
+	font-size:17px;
+	line-height:30px;
+}
+
+
+.listtitle img {
+	float:right;
+	margin-left:10px; 
+}
+
+.listbox {
+	overflow:auto;
+	border:1px solid #CCC;
+	border-radius:5px;
+	margin-bottom:5px;
+	padding:10px;
+	text-align:justify;
+}
+
+.listbox #title {
+	display:block;
+	padding-top:10px;
+	padding-bottom:5px; 
+}
+
+.showimg {
+	width:90px;
+	height:60px;
+	border:1px solid #CCC;
+	padding:3px;
+	margin-left:10px;
+	float:right;
+}
+
+.pagenum {
+	overflow:auto;
+	margin-top:5px;
+}
+
+.pagenum b {
+	display:block;
+	float:right;
+	width:32px;
+	text-align:center;
+	padding-top:4px;
+	padding-bottom:4px;
+	background-color:#333;
+	color:#000;
+	border-radius: 5px;
+	margin:1px;
+}
+
+
+.pagenum a {
+	text-decoration:none;
+	display:block;
+	float:right;
+	padding-top:3px;
+	padding-bottom:3px;
+	width:30px;
+	text-align:center;
+	border:1px solid #999;
+	color:#555;
+	border-radius: 5px;
+	margin:1px;
+}
+
+.pagenum a:hover {
+	background-color:#333;
+	color:#000;
+}
+
+.pagenum label {
+	display:block;
+	float:left;
+	padding:7px;
+	padding-left:0;
+}
+
+.copyright {
+	padding:20px;
+	text-align:center;
+	font-size:13px;
+}
+
+/*slogan****************************************************/
+
+.sliderwrapper {
+	position: relative; /*leave as is*/
+	overflow: hidden; /*leave as is*/
+	height:150px;
+	width:780px;
+	padding:0px; margin:0;
+	overflow:hidden;
+}
+
+.sliderwrapper .contentdiv {
+	visibility: hidden; /*leave as is*/
+	position: absolute; /*leave as is*/
+	left: 0;  /*leave as is*/
+	top: 0;  /*leave as is*/
+	overflow:hidden;
+}
+
+.contentdiv {
+	display:block;
+	border-radius:2px;
+	overflow:hidden;
+
+}
+
+.contentdiv img {
+	width:780px;
+	height:150px;
+	overflow:hidden;
+}
+
+.contentdiv a {
+	display:block;
+	padding:1px;
+	position:absolute;
+	line-height:22px;
+	overflow:hidden;
+	bottom:0;
+	right:0;
+	text-align:justify;
+
+	width:550px;
+	margin-right:0;
+	margin-bottom:50px;
+	border-radius:2px 0 0 10px;
+	box-shadow:1px 1px 3px #333;
+	overflow:hidden;
+
+}
+
+.contentdiv a b {
+	font-weight:normal;
+	font-size:22px;
+	display:block;
+	padding-bottom:10px;
+}
+
+.pagination{
+	display:block;
+	text-align:left;
+	position:relative;
+	z-index:100000;
+	direction:ltr;
+	padding:10px;
+	margin-top:-50px;
+}
+
+.pagination a{
+	opacity:0.3;
+}
+
+.pagination a:hover, .pagination a.selected{
+	opacity:1;
+}
+
+/*form style **************************************************************/
+
+.field {
+	padding:7px;
+	border:1px solid #999;
+	border-radius: 5px;
+	width:230px;
+	margin:2px;
+}
+
+.field-failed {
+	padding:7px;
+	border:1px solid #900;
+	border-radius: 5px;
+	width:230px;
+	margin:2px;
+}
+
+.button {
+	margin:3px;
+	float:left;
+	background-image:url(images/button.jpg);
+	background-position:center top;
+	color:#000;
+	cursor:pointer; 
+	padding:7px;
+	border-radius: 5px;
+	float:left;
+}
+
+.button:hover {
+	background-position:center bottom;
+	color:#000;
+}
+
+.error {
+	font-size:13px;
+	line-height:25px;
+	background-color:#F2575B;
+	color:#000;
+	padding:7px;
+	border-radius: 5px;
+	margin:2px;
+	text-align:right;
+	background-image:url(images/error-bg.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+.error5 {
+	font-size:13px;
+	line-height:25px;
+	color:#000;
+	padding:7px;
+	border-radius: 5px;
+	margin:2px;
+	text-align:right;
+        background: url("images/transbg.png") repeat scroll 0% 0% transparent; margin-down: 20px;
+}
+.error a {
+	font-style:italic;
+	text-decoration:underline;
+	color:#000;
+}
+
+.success {
+	font-size:13px;
+	line-height:25px;
+	background-color:#090;
+	color:#000;
+	padding:7px;
+	border:1px #090 solid;
+	border-radius: 5px;
+	margin:2px;
+	text-align:right;
+	background-image:url(images/success-bg.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+/* fixed content***********************************************************************/
+
+html, body {
+	height:100%;
+}
+ 
+body {
+	position:relative; /*stabiliseren van IE*/
+}
+ 
+#container, #navigation {
+	min-width:200px;
+	position:relative;
+}
+ 
+/*IE6 hack for min-width... skipped*/
+ 
+#container {
+	min-height:100%;
+}
+* html #container {
+	height:100%; /*IE6*/
+}
+
+#navigation {
+	width:200px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:1000;
+	padding:1px;
+}
+
+* html #navigation {
+	position:absolute;
+	width:200px;/*IE5.5*/
+	bottom:0;
+	left:0;
+	overflow:visible;
+	top:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop +(documentElement.clientHeight-this.clientHeight) : document.body.scrollTop +(document.body.clientHeight-this.clientHeight));
+}
+
+/*tooltip *****************************************************/
+
+.ui-tooltip {
+	padding: 5px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	box-shadow: 0 0 3px #aaa;
+	background-color:#000;
+}
+
+/*show time *****************************************************/
+
+.clock{
+	/* The .clock div. Created dynamically by jQuery */
+	height:50px;
+	width:50px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+}
+
+.clock .rotate{
+	/* There are two .rotate divs - one for each half of the background */
+	position:absolute;
+	width:50px;
+	height:50px;
+	top:0;
+	left:0;
+}
+
+.rotate.right{
+	display:none;
+	z-index:11;
+}
+
+.clock .bg, .clock .front{
+	width:25px;
+	height:50px;
+	position:absolute;
+	top:0;
+}
+
+.clock .display{
+	/* Holds the number of seconds, minutes or hours respectfully */
+	position:absolute;
+	width:50px;
+	z-index:20;
+	color:#333;
+	font-size:17px;
+	text-align:center;
+	top:12px;
+	left:0;
+}
+
+/* The left part of the background: */
+
+.clock .bg.left{ left:0; }
+
+/* Individual styles for each color: */
+.orange .bg.left{ background:url(images/bg_orange.png) no-repeat left top; }
+.green .bg.left{ background:url(images/bg_green.png) no-repeat left top; }
+.blue .bg.left{	background:url(images/bg_blue.png) no-repeat left top; }
+
+/* The right part of the background: */
+.clock .bg.right{ left:25px; }
+
+.orange .bg.right{ background:url(images/bg_orange.png) no-repeat right top; }
+.green .bg.right{ background:url(images/bg_green.png) no-repeat right top; }
+.blue .bg.right{ background:url(images/bg_blue.png) no-repeat right top; }
+
+
+.clock .front.left{
+	left:0;
+	z-index:10;
+}
+
